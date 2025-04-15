@@ -35,6 +35,7 @@
         background-repeat: no-repeat;
         height: 100vh;
         transition: all 0.8s;
+        display: none;
       }
 
       .book {
@@ -242,6 +243,8 @@
 <script>
   const body = document.getElementById("body");
   const sound = document.getElementById("sound");
+  const book = document.getElementById("book");
+  
   book.addEventListener("mouseover", () => {
     body.style.backgroundImage =
       "url('https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F75edc704-a33f-48e1-bd4d-c3bb4a8402b4_1456x816.png')";
@@ -262,5 +265,6 @@
     modal.classList.remove("active");
     sound.play();
     sound.volume = 0.3;
+    book.style.display = "block";
   });
 </script>
