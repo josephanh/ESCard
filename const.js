@@ -1,0 +1,71 @@
+const loiChuaPhucSinh = [
+  "Người đã sống lại rồi, và Người đi Galilê trước các ông; ở đó các ông sẽ thấy Người. (Matthêu 28,7)",
+  "Người không có ở đây đâu, vì Người đã trỗi dậy như lời Người đã nói. (Matthêu 28,6)",
+  "Các bà đừng sợ! Tôi biết các bà tìm Đức Giêsu, Đấng bị đóng đinh. Người đã trỗi dậy rồi. (Matthêu 28,5-6)",
+  "Anh em đừng sợ! Các anh tìm Đức Giêsu Nadarét, Đấng đã bị đóng đinh. Người đã trỗi dậy rồi. (Máccô 16,6)",
+  "Các ông đừng hoảng sợ! Người đã trỗi dậy rồi, không còn ở đây nữa. (Máccô 16,6)",
+  "Cứ đi đến Galilê, ở đó các ngươi sẽ thấy Thầy. (Matthêu 28,10)",
+  "Chúa đã sống lại thật! Ngài đã hiện ra với Simon! (Luca 24,34)",
+  "Đức Giêsu đã sống lại và hiện ra với họ, Người đã mở lòng họ để họ hiểu Kinh Thánh. (Luca 24,45)",
+  "Tại sao các bà lại tìm Người sống giữa kẻ chết? Người không còn ở đây nữa, nhưng đã sống lại rồi. (Luca 24,5-6)",
+  "Bình an cho anh em! (Luca 24,36)",
+  "Bình an cho anh em! Như Chúa Cha đã sai Thầy, thì Thầy cũng sai anh em. (Gioan 20,21)",
+  "Đừng sợ, hãy nói với anh em Thầy đến Galilê, ở đó họ sẽ thấy Thầy. (Matthêu 28,10)",
+  "Thầy là sự sống lại và là sự sống. Ai tin vào Thầy thì dù đã chết, cũng sẽ được sống. (Gioan 11,25)",
+  "Khi nào anh em đưa Con Người lên cao, bấy giờ anh em sẽ biết: Ta là ai. (Gioan 8,28)",
+  "Vì Thầy sống, và anh em cũng sẽ được sống. (Gioan 14,19)",
+  "Đừng sờ vào Thầy, vì Thầy chưa lên cùng Cha. (Gioan 20,17)",
+  "Hãy đặt ngón tay vào đây, và hãy nhìn tay Thầy. Đừng cứng lòng nữa, nhưng hãy tin. (Gioan 20,27)",
+  "Phúc thay những người không thấy mà tin! (Gioan 20,29)",
+];
+
+const loiChucDau = [
+  "Chúc cho ngày Phục Sinh mang lại cho",
+  "Nguyện ánh sáng Phục Sinh chiếu rọi cho",
+  "Cầu chúc mùa Phục Sinh đem đến cho",
+  "Xin Đấng Phục Sinh ban bình an cho",
+  "Mừng Chúa sống lại, chúc cho",
+  "Phục Sinh là hy vọng mới – chúc cho",
+  "Chúc sự sống lại của Chúa canh tân tâm hồn cho",
+  "Nguyện mùa Phục Sinh khơi dậy niềm vui cho",
+  "Chúc cho ánh sáng Phục Sinh luôn đồng hành cùng",
+  "Mừng Phục Sinh – cầu chúc cho",
+  "Nguyện Chúa Kitô Phục Sinh luôn hiện diện bên",
+  "Chúc cho ân sủng và bình an của Chúa đến với",
+  "Mùa Phục Sinh là mùa yêu thương – xin dành điều tốt lành nhất cho",
+  "Chúc cho Đấng Sống Lại chạm đến tâm hồn của",
+  "Xin Chúa sống lại trong lòng",
+  "Cầu chúc cho ngày lễ Phục Sinh mang nhiều ơn thiêng cho",
+  "Mừng lễ Phục Sinh! Nguyện bình an Chúa ở lại với",
+  "Chúc niềm tin Phục Sinh trở thành sức mạnh cho",
+  "Mùa Phục Sinh đến – cầu cho",
+  "Chúc phúc lành từ Đấng Phục Sinh tuôn đổ trên",
+];
+
+const loiChucCuoi = [
+  "niềm vui thật sự và sự bình an vĩnh cửu.",
+  "sức sống mới và lòng tin bền vững.",
+  "trái tim được đổi mới và tràn đầy yêu thương.",
+  "sự chữa lành và hy vọng trong từng ngày sống.",
+  "một khởi đầu mới tràn đầy ơn thánh.",
+  "bình an sâu lắng trong tâm hồn.",
+  "niềm tin mạnh mẽ vượt qua mọi khó khăn.",
+  "ánh sáng soi lối và sức mạnh nội tâm.",
+  "sự kiên vững trong hành trình đức tin.",
+  "tình yêu trọn vẹn và niềm vui bất tận.",
+  "ơn tha thứ và bình an trong Chúa.",
+  "niềm hạnh phúc đơn sơ nhưng bền lâu.",
+  "niềm vui được sống lại từng ngày.",
+  "đức tin vững bền giữa đời thường.",
+  "một cuộc sống mới đầy hy vọng.",
+  "ơn can đảm để sống chứng tá Tin Mừng.",
+  "một trái tim biết yêu và được yêu.",
+  "sự bình an không gì lay chuyển được.",
+  "niềm vui phục sinh lan tỏa trong mọi hành động.",
+  "ơn cứu độ và sự sống đời đời.",
+];
+
+function randomLoiChua() {
+  const index = Math.floor(Math.random() * loiChuaPhucSinh.length); // Chọn ngẫu nhiên chỉ số trong mảng
+  return loiChuaPhucSinh[index]; // Trả về câu Lời Chúa tương ứng
+}
